@@ -104,17 +104,42 @@ INSERT INTO Cargo VALUES('4','Administrador Deportivo');
 INSERT INTO Cargo VALUES('5','Fisioterapeuta');
 INSERT INTO Cargo VALUES('6','Entrenador');
 
+/*-----------------EMPLEADOS------------------*/
+-- Director deportivo
+INSERT INTO Empleado VALUES ('1', 'Valeria', 'Jover Calatayud', sysdate, 'vjover@udistrital.edu.co'); 
+-- Director deportivo
+INSERT INTO Empleado VALUES ('2', 'Eric Epifanio', 'Lopez Cano', sysdate, 'elopez@udistrital.edu.co'); 
+-- Docente 
+INSERT INTO Empleado VALUES ('3', 'Marcio', 'Villanueva Gallardo', sysdate, 'mvillanueva@udistrital.edu.co'); 
+-- Docente
+INSERT INTO Empleado VALUES ('4', 'Raquel Josefina', 'Alonso Moreno', sysdate, 'ralonso@udistrital.edu.co'); 
+-- Docente
+INSERT INTO Empleado VALUES ('5', 'Ariel', 'Girona Ruiz', sysdate, 'agirona@udistrital.edu.co'); 
+-- Docente
+INSERT INTO Empleado VALUES ('6', 'Baudelio ', 'Vives', sysdate, 'bvives@udistrital.edu.co'); 
+-- Auxiliar deportivo
+INSERT INTO Empleado VALUES ('7', 'Raimundo Eustaquio', 'Aguado Villalonga', sysdate, 'raguado@udistrital.edu.co'); 
+-- Auxiliar deportivo
+INSERT INTO Empleado VALUES ('8', 'Maria', 'Belen Gallo', sysdate, 'mbelen@udistrital.edu.co'); 
+-- Entrenador deportivo 
+INSERT INTO Empleado VALUES ('9', 'Luis', 'Palau Peñas', sysdate, 'lpalau@udistrital.edu.co'); 
+-- Entrenador deportivo
+INSERT INTO Empleado VALUES ('10', 'Octavia', 'Tamayo Ferran', sysdate, 'otamayo@udistrital.edu.co'); 
+-- Entrenador deportivo
+INSERT INTO Empleado VALUES ('11', 'Rodrigo ', 'Aparicio Minguez', sysdate, 'raparicio@udistrital.edu.co'); 
+
+
 /*---------AÑADIR CODIGO EMPLEADO--------------*/
-INSERT INTO Equipo VALUES(1,'1','1',sysdate);
-INSERT INTO Equipo VALUES(2,'1','3',sysdate);
-INSERT INTO Equipo VALUES(3,'1','4',sysdate);
-INSERT INTO Equipo VALUES(4,'1','5',sysdate);
-INSERT INTO Equipo VALUES(5,'1','6',sysdate);
-INSERT INTO Equipo VALUES(6,'1','7',sysdate);
-INSERT INTO Equipo VALUES(7,'1','9',sysdate);
-INSERT INTO Equipo VALUES(8,'1','10',sysdate);
-INSERT INTO Equipo VALUES(9,'1','11',sysdate);
-INSERT INTO Equipo VALUES(10,'1','12',sysdate);
+INSERT INTO Equipo VALUES(1,'9','1',sysdate);
+INSERT INTO Equipo VALUES(2,'9','3',sysdate);
+INSERT INTO Equipo VALUES(3,'9','4',sysdate);
+INSERT INTO Equipo VALUES(4,'10','5',sysdate);
+INSERT INTO Equipo VALUES(5,'10','6',sysdate);
+INSERT INTO Equipo VALUES(6,'10','7',sysdate);
+INSERT INTO Equipo VALUES(7,'11','9',sysdate);
+INSERT INTO Equipo VALUES(8,'11','10',sysdate);
+INSERT INTO Equipo VALUES(9,'11','11',sysdate);
+INSERT INTO Equipo VALUES(10,'11','12',sysdate);
 
 INSERT INTO Espacio VALUES('1','1',NULL,'Unidad Deportiva');
 
@@ -178,20 +203,6 @@ INSERT INTO Espacio VALUES('45','5','4','Salon Vivero 10');
 /*----------SALA DE MAQUINAS VIVERO-----------*/
 INSERT INTO Espacio VALUES('46','7','4','Sala de Maquinas Vivero');
 
-/*-----------------EMPLEADOS------------------*/
-INSERT INTO Empleado VALUES ('1', 'Valeria', 'Jover Calatayud', sysdate, 'vjover@udistrital.edu.co'); -- Director deportivo
-INSERT INTO Empleado VALUES ('2', 'Eric Epifanio', 'Lopez Cano', sysdate, 'elopez@udistrital.edu.co'); -- Director deportivo
-INSERT INTO Empleado VALUES ('3', 'Marcio', 'Villanueva Gallardo', sysdate, 'mvillanueva@udistrital.edu.co'); -- Docente 
-INSERT INTO Empleado VALUES ('4', 'Raquel Josefina', 'Alonso Moreno', sysdate, 'ralonso@udistrital.edu.co'); -- Docente
-INSERT INTO Empleado VALUES ('5', 'Ariel', 'Girona Ruiz', sysdate, 'agirona@udistrital.edu.co'); -- Docente
-INSERT INTO Empleado VALUES ('6', 'Baudelio ', 'Vives', sysdate, 'bvives@udistrital.edu.co'); -- Docente
-INSERT INTO Empleado VALUES ('7', 'Raimundo Eustaquio', 'Aguado Villalonga', sysdate, 'raguado@udistrital.edu.co'); -- Auxiliar deportivo
-INSERT INTO Empleado VALUES ('8', 'Maria', 'Belen Gallo', sysdate, 'mbelen@udistrital.edu.co'); -- Auxiliar deportivo
-INSERT INTO Empleado VALUES ('9', 'Luis', 'Palau Peñas', sysdate, 'lpalau@udistrital.edu.co'); -- Entrenador deportivo 
-INSERT INTO Empleado VALUES ('10', 'Octavia', 'Tamayo Ferran', sysdate, 'otamayo@udistrital.edu.co'); -- Entrenador deportivo
-INSERT INTO Empleado VALUES ('11', 'Rodrigo ', 'Aparicio Minguez', sysdate, 'raparicio@udistrital.edu.co'); -- Entrenador deportivo
-
-
 /*---------CARGOS DE CADA EMPLEADO--------*/
 /*------DIRECTORES DEPORTIVOS A CARGO DE UNA SEDE-------*/
 INSERT INTO Empleado_Cargo VALUES (1,'2','3','1',sysdate,NULL);
@@ -233,8 +244,8 @@ INSERT INTO Empleado_Cargo VALUES (25,'3','1','8',sysdate,NULL);
 
 /*-----ENTRENADORES A CARGO DE UN CAMPO DE UNA SEDE-------*/
 INSERT INTO Empleado_Cargo VALUES (26,'5','6','9',sysdate,NULL);
-INSERT INTO Empleado_Cargo VALUES (26,'19','6','10',sysdate,NULL);
-INSERT INTO Empleado_Cargo VALUES (26,'33','6','11',sysdate,NULL);
+INSERT INTO Empleado_Cargo VALUES (27,'19','6','10',sysdate,NULL);
+INSERT INTO Empleado_Cargo VALUES (28,'33','6','11',sysdate,NULL);
 
 /*---------ESTUDIANTES DE CADA SEDE-------*/
 /*--------MACARENA-------*/
@@ -308,3 +319,4 @@ INSERT INTO ELEMENDEPORTIVO VALUES (8,'8','1','3','5',sysdate);
 INSERT INTO ELEMENDEPORTIVO VALUES (9,'9','2','3','1',sysdate);
 INSERT INTO ELEMENDEPORTIVO VALUES (10,'10','1','3','3',sysdate);
 
+commit();
