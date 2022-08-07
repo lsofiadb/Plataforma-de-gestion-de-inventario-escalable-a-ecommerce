@@ -4,19 +4,19 @@ INSERT INTO TipoEspacio VALUES('3','Campo');
 INSERT INTO TipoEspacio VALUES('4','Pista');
 INSERT INTO TipoEspacio VALUES('5','Salon');
 INSERT INTO TipoEspacio VALUES('6','Piscina');
-INSERT INTO TipoEspacio VALUES('7','Sala Máquinas');
+INSERT INTO TipoEspacio VALUES('7','Sala Maquinas');
 INSERT INTO TipoEspacio VALUES('8','Muro Escalar');
 
 
 INSERT INTO Deporte VALUES('1','Atletismo');
 INSERT INTO Deporte VALUES('2','Tenis');
 INSERT INTO Deporte VALUES('3','Tenis Mesa');
-INSERT INTO Deporte VALUES('4','Natación');
+INSERT INTO Deporte VALUES('4','Natacion');
 INSERT INTO Deporte VALUES('5','Voleivol');
 INSERT INTO Deporte VALUES('6','Futbol');
 INSERT INTO Deporte VALUES('7','Futbol sala');
-INSERT INTO Deporte VALUES('8','Bádminton');
-INSERT INTO Deporte VALUES('9','Aeróbicos');
+INSERT INTO Deporte VALUES('8','Badminton');
+INSERT INTO Deporte VALUES('9','Aerobicos');
 INSERT INTO Deporte VALUES('10','Boxeo');
 INSERT INTO Deporte VALUES('11','Artes Marciales');
 INSERT INTO Deporte VALUES('12','Gimnasia Olimpica');
@@ -41,9 +41,9 @@ INSERT INTO Periodo VALUES('20213');
 INSERT INTO Periodo VALUES('20221');
 
 
-INSERT INTO TipoElemento VALUES('1','Balón Baloncesto');
-INSERT INTO TipoElemento VALUES('2','Balón Futbol');
-INSERT INTO TipoElemento VALUES('3','Balón Voleibol');
+INSERT INTO TipoElemento VALUES('1','Balon Baloncesto');
+INSERT INTO TipoElemento VALUES('2','Balon Futbol');
+INSERT INTO TipoElemento VALUES('3','Balon Voleibol');
 INSERT INTO TipoElemento VALUES('4','Pelota Tenis mesa');
 INSERT INTO TipoElemento VALUES('5','Pelota Tenis campo');
 INSERT INTO TipoElemento VALUES('6','Colchoneta');
@@ -53,11 +53,11 @@ INSERT INTO TipoElemento VALUES('9','Malla Voleibol');
 INSERT INTO TipoElemento VALUES('10','Saco Boxeo');
 INSERT INTO TipoElemento VALUES('11','Aros hula-hula');
 INSERT INTO TipoElemento VALUES('12','Chaleco Boxeo');
-INSERT INTO TipoElemento VALUES('13','Malla Pimpón');
+INSERT INTO TipoElemento VALUES('13','Malla Pimpon');
 
 
 INSERT INTO Actividad VALUES('CU','Curso');
-INSERT INTO Actividad VALUES('PR','Práctica');
+INSERT INTO Actividad VALUES('PR','Practica');
 INSERT INTO Actividad VALUES('EN','Entrenamiento');
 
 
@@ -127,16 +127,16 @@ INSERT INTO Espacio VALUES('4','2','1','Vivero');
 INSERT INTO Espacio VALUES('5','3','2','Campo Macarena');
 INSERT INTO Espacio VALUES('6','4','2','Pista Macarena');
 INSERT INTO Espacio VALUES('7','6','2','Piscina Macarena');
-INSERT INTO Espacio VALUES('8','5','2','Salón Macarena 1');
-INSERT INTO Espacio VALUES('9','5','2','Salón Macarena 2');
-INSERT INTO Espacio VALUES('10','5','2','Salón Macarena 3');
-INSERT INTO Espacio VALUES('11','5','2','Salón Macarena 4');
-INSERT INTO Espacio VALUES('12','5','2','Salón Macarena 5');
-INSERT INTO Espacio VALUES('13','5','2','Salón Macarena 6');
-INSERT INTO Espacio VALUES('14','5','2','Salón Macarena 7');
-INSERT INTO Espacio VALUES('15','5','2','Salón Macarena 8');
-INSERT INTO Espacio VALUES('16','5','2','Salón Macarena 9');
-INSERT INTO Espacio VALUES('17','5','2','Salón Macarena 10');
+INSERT INTO Espacio VALUES('8','5','2','Salon Macarena 1');
+INSERT INTO Espacio VALUES('9','5','2','Salon Macarena 2');
+INSERT INTO Espacio VALUES('10','5','2','Salon Macarena 3');
+INSERT INTO Espacio VALUES('11','5','2','Salon Macarena 4');
+INSERT INTO Espacio VALUES('12','5','2','Salon Macarena 5');
+INSERT INTO Espacio VALUES('13','5','2','Salon Macarena 6');
+INSERT INTO Espacio VALUES('14','5','2','Salon Macarena 7');
+INSERT INTO Espacio VALUES('15','5','2','Salon Macarena 8');
+INSERT INTO Espacio VALUES('16','5','2','Salon Macarena 9');
+INSERT INTO Espacio VALUES('17','5','2','Salon Macarena 10');
 
 /*----------SALA DE MAQUINAS MACARENA-----------*/
 INSERT INTO Espacio VALUES('18','7','2','Sala de Maquinas Macarena');
@@ -146,16 +146,16 @@ INSERT INTO Espacio VALUES('18','7','2','Sala de Maquinas Macarena');
 INSERT INTO Espacio VALUES('19','3','3','Campo La 40');
 INSERT INTO Espacio VALUES('20','4','3','Pista La 40');
 INSERT INTO Espacio VALUES('21','6','3','Piscina La 40');
-INSERT INTO Espacio VALUES('22','5','3','Salón La 40 1');
-INSERT INTO Espacio VALUES('23','5','3','Salón La 40 2');
-INSERT INTO Espacio VALUES('24','5','3','Salón La 40 3');
-INSERT INTO Espacio VALUES('25','5','3','Salón La 40 4');
-INSERT INTO Espacio VALUES('26','5','3','Salón La 40 5');
-INSERT INTO Espacio VALUES('27','5','3','Salón La 40 6');
-INSERT INTO Espacio VALUES('28','5','3','Salón La 40 7');
-INSERT INTO Espacio VALUES('29','5','3','Salón La 40 8');
-INSERT INTO Espacio VALUES('30','5','3','Salón La 40 9');
-INSERT INTO Espacio VALUES('31','5','3','Salón La 40 10');
+INSERT INTO Espacio VALUES('22','5','3','Salon La 40 1');
+INSERT INTO Espacio VALUES('23','5','3','Salon La 40 2');
+INSERT INTO Espacio VALUES('24','5','3','Salon La 40 3');
+INSERT INTO Espacio VALUES('25','5','3','Salon La 40 4');
+INSERT INTO Espacio VALUES('26','5','3','Salon La 40 5');
+INSERT INTO Espacio VALUES('27','5','3','Salon La 40 6');
+INSERT INTO Espacio VALUES('28','5','3','Salon La 40 7');
+INSERT INTO Espacio VALUES('29','5','3','Salon La 40 8');
+INSERT INTO Espacio VALUES('30','5','3','Salon La 40 9');
+INSERT INTO Espacio VALUES('31','5','3','Salon La 40 10');
 
 /*----------SALA DE MAQUINAS LA 40-----------*/
 INSERT INTO Espacio VALUES('32','7','3','Sala de Maquinas La 40');
@@ -164,16 +164,16 @@ INSERT INTO Espacio VALUES('32','7','3','Sala de Maquinas La 40');
 INSERT INTO Espacio VALUES('33','3','4','Campo Vivero');
 INSERT INTO Espacio VALUES('34','4','4','Pista Vivero');
 INSERT INTO Espacio VALUES('35','6','4','Piscina Vivero');
-INSERT INTO Espacio VALUES('36','5','4','Salón Vivero 1');
-INSERT INTO Espacio VALUES('37','5','4','Salón Vivero 2');
-INSERT INTO Espacio VALUES('38','5','4','Salón Vivero 3');
-INSERT INTO Espacio VALUES('39','5','4','Salón Vivero 4');
-INSERT INTO Espacio VALUES('40','5','4','Salón Vivero 5');
-INSERT INTO Espacio VALUES('41','5','4','Salón Vivero 6');
-INSERT INTO Espacio VALUES('42','5','4','Salón Vivero 7');
-INSERT INTO Espacio VALUES('43','5','4','Salón Vivero 8');
-INSERT INTO Espacio VALUES('44','5','4','Salón Vivero 9');
-INSERT INTO Espacio VALUES('45','5','4','Salón Vivero 10');
+INSERT INTO Espacio VALUES('36','5','4','Salon Vivero 1');
+INSERT INTO Espacio VALUES('37','5','4','Salon Vivero 2');
+INSERT INTO Espacio VALUES('38','5','4','Salon Vivero 3');
+INSERT INTO Espacio VALUES('39','5','4','Salon Vivero 4');
+INSERT INTO Espacio VALUES('40','5','4','Salon Vivero 5');
+INSERT INTO Espacio VALUES('41','5','4','Salon Vivero 6');
+INSERT INTO Espacio VALUES('42','5','4','Salon Vivero 7');
+INSERT INTO Espacio VALUES('43','5','4','Salon Vivero 8');
+INSERT INTO Espacio VALUES('44','5','4','Salon Vivero 9');
+INSERT INTO Espacio VALUES('45','5','4','Salon Vivero 10');
 
 /*----------SALA DE MAQUINAS VIVERO-----------*/
 INSERT INTO Espacio VALUES('46','7','4','Sala de Maquinas Vivero');
@@ -239,7 +239,7 @@ INSERT INTO Empleado_Cargo VALUES (26,'33','6','11',sysdate,NULL);
 /*---------ESTUDIANTES DE CADA SEDE-------*/
 /*--------MACARENA-------*/
 INSERT INTO Estudiante VALUES ('1','2','Luis Angel','Carrasco Aznar',sysdate,'lcarrasco@udistrital.edu.co','05/09/1999');
-INSERT INTO Estudiante VALUES ('2','2','Florinda','Manjón Egea',sysdate,'fmanjon@udistrital.edu.co','04/07/1998');
+INSERT INTO Estudiante VALUES ('2','2','Florinda','Manjon Egea',sysdate,'fmanjon@udistrital.edu.co','04/07/1998');
 INSERT INTO Estudiante VALUES ('3','2','Jenaro','Cuenca Garmendia',sysdate,'jcuenca@udistrital.edu.co','11/11/2000');
 
 /*--------LA 40-------*/
@@ -251,7 +251,7 @@ INSERT INTO Estudiante VALUES ('6','3','Cecilio','Vallejo Sarabia',sysdate,'cval
 INSERT INTO Estudiante VALUES ('7','4','Javier','Cortina Bellido',sysdate,'jcortina@udistrital.edu.co','01/05/1998');
 INSERT INTO Estudiante VALUES ('8','4','Toñito','Lasa Bernal',sysdate,'tlasa@udistrital.edu.co','06/02/1997');
 INSERT INTO Estudiante VALUES ('9','4','Albert','Carnero Ramis',sysdate,'acarnero@udistrital.edu.co','02/11/2002');
-INSERT INTO Estudiante VALUES ('10','4','Humberto','Poza Sacristán',sysdate,'hpoza@udistrital.edu.co','03/12/1999');
+INSERT INTO Estudiante VALUES ('10','4','Humberto','Poza Sacristan',sysdate,'hpoza@udistrital.edu.co','03/12/1999');
 
 /*----------DIA-------*/
 INSERT INTO Dia VALUES ('1','Lunes');
@@ -262,7 +262,7 @@ INSERT INTO Dia VALUES ('5','Viernes');
 INSERT INTO Dia VALUES ('6','Sabado');
 INSERT INTO Dia VALUES ('7','Domingo');
 
-/*-----------PROGRAMACIÓN------------*/
+/*-----------PROGRAMACIoN------------*/
 /*-------------CURSOS---------*/
 INSERT INTO Programacion VALUES (1,'5','1','20191','CU','08','10','1',50,NULL);
 INSERT INTO Programacion VALUES (2,'7','4','20201','CU','06','08','1',45,NULL);
@@ -275,7 +275,7 @@ INSERT INTO Programacion VALUES (6,'19','5','20193','EN','08','10','2',45,NULL);
 INSERT INTO Programacion VALUES (7,'33','6','20201','EN','10','12','2',30,NULL);
 INSERT INTO Programacion VALUES (8,'33','6','20203','EN','12','14','2',40,NULL);
 
-/*------------PRÁCTICA LIBRE---------*/
+/*------------PRaCTICA LIBRE---------*/
 INSERT INTO Programacion VALUES (9,'6','1','20191','PR','10','12','3',50,NULL);
 INSERT INTO Programacion VALUES (10,'20','1','20193','PR','12','14','3',45,NULL);
 INSERT INTO Programacion VALUES (11,'34','2','20201','PR','14','16','3',30,NULL);
