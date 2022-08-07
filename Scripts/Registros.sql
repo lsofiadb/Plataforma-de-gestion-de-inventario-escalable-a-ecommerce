@@ -319,4 +319,4 @@ INSERT INTO ELEMENDEPORTIVO VALUES (8,'8','1','3','5',sysdate);
 INSERT INTO ELEMENDEPORTIVO VALUES (9,'9','2','3','1',sysdate);
 INSERT INTO ELEMENDEPORTIVO VALUES (10,'10','1','3','3',sysdate);
 
-commit();
+commit;
