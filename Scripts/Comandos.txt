@@ -1,0 +1,15 @@
+sqlplus sys as sysdba
+
+contraseña oracle2022
+
+alter session set "_oracle_script" = true;
+
+create user <usuario> identified by <password>
+Ejemplo:    create user lsduenasb identified by lsduenasb;
+
+grant connect, resource, dba to <usuario>
+Ejemplo:  grant connect, resource, dba to lsduenasb;
+
+connect usuario/password
+Ejemplo: connect lsduenas/lsduenasb;
+
