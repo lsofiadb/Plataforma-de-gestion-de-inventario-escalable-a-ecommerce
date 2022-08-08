@@ -26,15 +26,7 @@ public class Empleado_CargoController {
         return ResponseEntity.ok(empleado_cargoService.obtenerTodosEmpleadoCargo());
     }
 
-    @GetMapping("/validarAuxiliar/{CODEMPLEADO}")
-    public ResponseEntity<Empleado_Cargo> validarAuxiliar(@PathVariable String CODEMPLEADO){
 
-        if(!empleadoService.getEmpleado(CODEMPLEADO).isEmpty()){
-            return ResponseEntity.ok(empleado_cargoService.validarIngresoAuxiliar(empleadoService.getEmpleado(CODEMPLEADO).get()));
-        }else{
-            return null;
-        }
-    }
 
 
 
