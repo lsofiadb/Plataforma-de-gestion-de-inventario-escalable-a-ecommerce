@@ -1,5 +1,6 @@
 package UnidadDeportivaUD.model;
 
+import UnidadDeportivaUD.model.llaves.primarias.compuestas.Deporte_TipoelementoPK;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@IdClass(Deporte_Tipoelemento.class)
+@IdClass(Deporte_TipoelementoPK.class)
 public class Deporte_Tipoelemento {
 
     @Id
