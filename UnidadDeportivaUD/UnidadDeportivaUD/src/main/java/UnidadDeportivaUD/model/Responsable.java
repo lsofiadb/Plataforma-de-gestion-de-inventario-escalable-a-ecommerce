@@ -4,6 +4,7 @@ import UnidadDeportivaUD.model.llaves.primarias.compuestas.ResponsablePK;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -25,13 +26,13 @@ public class Responsable {
     @JoinColumn(name = "CONSECRES")
     private Long CONSECRES;
 
-    @ManyToOne @JoinColumn(name = "IDROL_FKRESPONSABLE")
+    @ManyToOne @JoinColumn(name = "IDROL_FKRESPONSABLE") @Nullable
     private Rol rol;
 
     @ManyToOne @JoinColumn(name = "CODEMPLEADO_FKRESPONSABLE")
     private Empleado empleado;
 
-    @ManyToOne @JoinColumn(name = "CODESTUDIANTE_FKRESPONSABLE")
+    @ManyToOne @JoinColumn(name = "CODESTUDIANTE_FKRESPONSABLE") @Nullable
     private Estudiante estudiante;
 
     @Column(name = "FECHAINI")
