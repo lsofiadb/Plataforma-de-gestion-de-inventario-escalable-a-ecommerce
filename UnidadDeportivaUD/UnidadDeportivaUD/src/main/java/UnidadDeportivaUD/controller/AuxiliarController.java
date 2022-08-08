@@ -69,7 +69,6 @@ public class AuxiliarController {
             List<Responsable> cursosAcargo = responsableService.obtenerCursosPorEmpleado(getEmpleadoByNombreApellido(nombre, apellido).getBody());
             Deporte deporte = new Deporte();
             deporte = cursosAcargo.get(0).getProgramacion().getDeporte();
-
             //filtro en tabla de rompimiento
             Deporte_Tipoelemento deporte_tipoelemento = new Deporte_Tipoelemento();
             deporte_tipoelemento = deporte_tipoelementoService.filtrarPorDeporte(deporte).get();
