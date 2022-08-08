@@ -275,22 +275,22 @@ INSERT INTO Dia VALUES ('7','Domingo');
 
 /*-----------PROGRAMACIoN------------*/
 /*-------------CURSOS---------*/
-INSERT INTO Programacion VALUES (1,'5','1','20191','CU','08','10','1',50,NULL);
-INSERT INTO Programacion VALUES (2,'7','4','20201','CU','06','08','1',45,NULL);
-INSERT INTO Programacion VALUES (3,'19','6','20191','CU','10','12','1',30,NULL);
-INSERT INTO Programacion VALUES (4,'33','9','20211','CU','12','14','1',40,NULL);
+INSERT INTO Programacion VALUES (1,'5','1','20191','CU','08','10','1',50,45);
+INSERT INTO Programacion VALUES (2,'7','4','20201','CU','06','08','1',45,40);
+INSERT INTO Programacion VALUES (3,'19','6','20191','CU','10','12','1',30,30);
+INSERT INTO Programacion VALUES (4,'33','9','20211','CU','12','14','1',40,40);
 
 /*--------EQUIPOS DE ENTRENAMIENTO------*/
-INSERT INTO Programacion VALUES (5,'5','5','20191','EN','06','08','2',50,NULL);
-INSERT INTO Programacion VALUES (6,'19','5','20193','EN','08','10','2',45,NULL);
-INSERT INTO Programacion VALUES (7,'33','6','20201','EN','10','12','2',30,NULL);
-INSERT INTO Programacion VALUES (8,'33','6','20203','EN','12','14','2',40,NULL);
+INSERT INTO Programacion VALUES (5,'5','5','20191','EN','06','08','2',50,45);
+INSERT INTO Programacion VALUES (6,'19','5','20193','EN','08','10','2',45,43);
+INSERT INTO Programacion VALUES (7,'33','6','20201','EN','10','12','2',30,30);
+INSERT INTO Programacion VALUES (8,'33','6','20203','EN','12','14','2',40,39);
 
 /*------------PRaCTICA LIBRE---------*/
-INSERT INTO Programacion VALUES (9,'6','1','20191','PR','10','12','3',50,NULL);
-INSERT INTO Programacion VALUES (10,'20','1','20193','PR','12','14','3',45,NULL);
-INSERT INTO Programacion VALUES (11,'34','2','20201','PR','14','16','3',30,NULL);
-INSERT INTO Programacion VALUES (12,'34','2','20203','PR','16','18','3',40,NULL);
+INSERT INTO Programacion VALUES (9,'6','1','20191','PR','10','12','3',50,49);
+INSERT INTO Programacion VALUES (10,'20','1','20193','PR','12','14','3',45,45);
+INSERT INTO Programacion VALUES (11,'34','2','20201','PR','14','16','3',30,30);
+INSERT INTO Programacion VALUES (12,'34','2','20203','PR','16','18','3',40,40);
 
 /*-------------ESPACIO DEPORTE-----------*/
 INSERT INTO Espacio_Deporte VALUES ('1','5');
