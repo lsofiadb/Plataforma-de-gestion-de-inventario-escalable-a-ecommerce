@@ -20,15 +20,15 @@ public class Empleado_Cargo {
 
     @ManyToOne
     @JoinColumn(name="CODESPACIO_FKEMPLEADO_CARGO")
-    private Espacio CODESPACIO_FKEMPLEADO_CARGO;
+    private Espacio espacio;
 
     @ManyToOne
     @JoinColumn(name="IDCARGO_FKEMPLEADO_CARGO")
-    private Cargo IDCARGO_FKEMPLEADO_CARGO;
+    private Cargo cargo;
 
     @ManyToOne
     @JoinColumn(name="CODEMPLEADO_FKEMPLEADO_CARGO")
-    private Empleado CODEMPLEADO_FKEMPLEADO_CARGO;
+    private Empleado empleado;
 
     @Column(name = "FECHACARGO")
     private Date FECHACARGO;
