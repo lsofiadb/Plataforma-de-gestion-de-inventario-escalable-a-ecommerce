@@ -24,4 +24,8 @@ public class ElemendeportivoService {
         }
     }
 
+    public Optional<Elemendeportivo> obtenerElementoDeportivo(Long CONSECELEMENTO){
+        return elemendeportivoRepository.findById(CONSECELEMENTO);
+    }
+
 }
