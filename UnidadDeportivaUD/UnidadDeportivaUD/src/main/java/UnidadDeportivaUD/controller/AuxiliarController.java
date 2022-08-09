@@ -29,6 +29,11 @@ public class AuxiliarController {
     @Autowired
     private EstadoService estadoService;
 
+    @Autowired
+    private EstudianteService estudianteService;
+
+    /****************----------------------------ASISTENCIA DOCENTE------------------*****************/
+
     @GetMapping("/validarAuxiliar/{CODEMPLEADO}")
     public ResponseEntity<Empleado_Cargo> validarAuxiliar(@PathVariable String CODEMPLEADO){
 
@@ -65,7 +70,7 @@ public class AuxiliarController {
     }
 
     @GetMapping("/consultarElementosDeportivos")
-    public ResponseEntity<Elemendeportivo> obtenerElementoDeportivo(@RequestParam(name = "nombre") String nombre, @RequestParam(name = "apellido") String apellido){
+    public ResponseEntity<Elemendeportivo> obtenerElementoDeportivoPorDocente(@RequestParam(name = "nombre") String nombre, @RequestParam(name = "apellido") String apellido){
         if(getEmpleadoByNombreApellido(nombre, apellido) != null){
 
             List<Responsable> cursosAcargo = responsableService.obtenerCursosPorEmpleado(getEmpleadoByNombreApellido(nombre, apellido).getBody());
@@ -104,5 +109,47 @@ public class AuxiliarController {
     }
 
 
+    /****************----------------------------ASISTENCIA PASANTE------------------*****************/
+
+    @GetMapping("/consultarPracticasPorEstudiante")
+    public ResponseEntity<List<Responsable>> consultarPracticasPorEstudiante(@RequestParam(name = "codigo") String codigo){
+        Estudiante estudiante = new Estudiante();
+        //consultar los cursos del estudiante si este existe
+        if(!estudianteService.findByID(codigo).isEmpty()){
+            estudiante = estudianteService.findByID(codigo).get();
+            return ResponseEntity.ok(responsableService.obtenerPracticaLibrePorEstudiante(estudiante));
+        } else{
+            return ResponseEntity.ok(responsableService.obtenerPracticaLibrePorEstudiante(estudiante));
+        }
+
+    }
+
+    @GetMapping("/consultarElementosDeportivosEstudiante")
+    public ResponseEntity<Elemendeportivo> obtenerElementoDeportivoPorEstudiante(@RequestParam(name = "codigo") String codigo){
+
+        Elemendeportivo elemendeportivoRetorno = new Elemendeportivo();
+
+        if(!estudianteService.findByID(codigo).isEmpty()){
+
+            List<Responsable> cursosAcargo = responsableService.obtenerPracticaLibrePorEstudiante(estudianteService.findByID(codigo).get());
+            Deporte deporte = new Deporte();
+            deporte = cursosAcargo.get(0).getProgramacion().getDeporte();
+            //filtro en tabla de rompimiento
+            Deporte_Tipoelemento deporte_tipoelemento = new Deporte_Tipoelemento();
+            deporte_tipoelemento = deporte_tipoelementoService.filtrarPorDeporte(deporte).get();
+
+            //filtro en Elemendeportivo por tipoElemento de la tabla Deporte_TipoElemento
+            Elemendeportivo elemendeportivo = new Elemendeportivo();
+            elemendeportivo = elemendeportivoService.filtarPorTipoElemento(deporte_tipoelemento.getTipoElemento()).get();
+
+            if(elemendeportivo.getEstado().getIDESTADO().equals("1")){ //solamente retorna el elemento deportivo con estado activo
+                return ResponseEntity.ok(elemendeportivo);
+            }else{
+                return null;
+            }
+        } else{
+            return null;
+        }
+    }
 
 }
