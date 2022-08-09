@@ -18,10 +18,23 @@ public class Empleado_CargoService {
 
     public Empleado_Cargo validarIngresoAuxiliar(Empleado empleado) {
 
-        Empleado_Cargo empleado_cargo = empleado_cargoRepository.findByEmpleado(empleado);
+        Empleado_Cargo empleado_cargo = empleado_cargoRepository.findByEmpleado(empleado).get(0);
 
         if(empleado_cargo.getCargo().getIDCARGO().equals("1")){ //es auxiliar
             System.out.println("HOLA ENCONTRE UN AUXILIAR");
+            return empleado_cargo;
+        } else {
+            return null;
+        }
+    }
+
+
+    public Empleado_Cargo validarIngresoDirectorDeportivo(Empleado empleado) {
+
+        Empleado_Cargo empleado_cargo = empleado_cargoRepository.findByEmpleado(empleado).get(0);
+
+        if(empleado_cargo.getCargo().getIDCARGO().equals("3")){ //es director deportivo
+            System.out.println("HOLA ENCONTRE UN DIRECTOR DEPORTIVO");
             return empleado_cargo;
         } else {
             return null;
