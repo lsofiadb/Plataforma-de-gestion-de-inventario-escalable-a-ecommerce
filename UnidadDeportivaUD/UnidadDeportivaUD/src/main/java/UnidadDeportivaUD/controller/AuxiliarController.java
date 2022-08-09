@@ -98,6 +98,8 @@ public class AuxiliarController {
         }else{
             elemendeportivo.setEstado(estadoService.obtenerEstadoPorId("1"));
         }
+        //actualización en la BD, faltaba esto
+        elemendeportivoService.actualizarEstadoElementoDeportivo(elemendeportivo);
         return ResponseEntity.ok(elemendeportivo);
     }
 

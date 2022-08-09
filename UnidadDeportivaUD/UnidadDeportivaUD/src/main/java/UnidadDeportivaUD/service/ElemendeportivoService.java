@@ -28,4 +28,9 @@ public class ElemendeportivoService {
         return elemendeportivoRepository.findById(CONSECELEMENTO);
     }
 
+
+    public Elemendeportivo actualizarEstadoElementoDeportivo(Elemendeportivo elemendeportivo){
+        return elemendeportivoRepository.save(elemendeportivo);
+    }
+
 }
