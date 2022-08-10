@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "87a30efd-7756-4f96-aceb-383b636eaa41",
+		"name": "ModuloUnidadDeportivaUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17256808"
+	},
+	"item": [
+		{
+			"name": "GET Deportes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/deporte/obtenerDeportes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"deporte",
+						"obtenerDeportes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET EmpleadoCargo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/EmpleadoCargo/getEmpleadoCargo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"EmpleadoCargo",
+						"getEmpleadoCargo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Espacio_Deporte",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/espacio_deporte/obtenerEspaciosDeporte",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"espacio_deporte",
+						"obtenerEspaciosDeporte"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET VerificarAuxiliar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/validarAuxiliar/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"validarAuxiliar",
+						"7"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "juan",
+							"disabled": true
+						},
+						{
+							"key": "apellido",
+							"value": "sanchez",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Empleado por nombre y apellido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/asistenciaDocente?nombre=Marcio&apellido=Villanueva Gallardo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"asistenciaDocente"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Marcio"
+						},
+						{
+							"key": "apellido",
+							"value": "Villanueva Gallardo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Cursos del empleado por nombre y apellido",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/consultarCursosPorDocente?nombre=Marcio&apellido=Villanueva Gallardo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"consultarCursosPorDocente"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Marcio"
+						},
+						{
+							"key": "apellido",
+							"value": "Villanueva Gallardo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  Elemento deportivo por Docente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/consultarElementosDeportivos?nombre=Ariel&apellido=Girona Ruiz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"consultarElementosDeportivos"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Ariel"
+						},
+						{
+							"key": "apellido",
+							"value": "Girona Ruiz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Cambiar estado elemento deportivo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/cambiarEstadoElementoDeportivo/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"cambiarEstadoElementoDeportivo",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/auxiliar/consultarCursosPorEstudiante?codigo=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/consultarPracticasPorEstudiante?codigo=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"consultarPracticasPorEstudiante"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/auxiliar/consultarElementosDeportivosEstudiante?codigo=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/consultarElementosDeportivosEstudiante?codigo=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"consultarElementosDeportivosEstudiante"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/auxiliar/consultarMiembroEquipoPorEstudiante?codigoEstudiante=6&codigoEquipo=3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/auxiliar/consultarMiembroEquipoPorEstudiante?codigoEstudiante=6&codigoEquipo=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"auxiliar",
+						"consultarMiembroEquipoPorEstudiante"
+					],
+					"query": [
+						{
+							"key": "codigoEstudiante",
+							"value": "6"
+						},
+						{
+							"key": "codigoEquipo",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

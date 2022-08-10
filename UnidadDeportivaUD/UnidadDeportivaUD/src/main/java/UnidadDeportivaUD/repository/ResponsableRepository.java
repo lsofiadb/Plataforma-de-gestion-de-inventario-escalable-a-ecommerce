@@ -1,6 +1,7 @@
 package UnidadDeportivaUD.repository;
 
 import UnidadDeportivaUD.model.Empleado;
+import UnidadDeportivaUD.model.Estudiante;
 import UnidadDeportivaUD.model.Responsable;
 import UnidadDeportivaUD.model.llaves.primarias.compuestas.ResponsablePK;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -12,5 +13,6 @@ import java.util.List;
 public interface ResponsableRepository extends JpaRepository<Responsable, ResponsablePK> {
 
     List<Responsable> findByEmpleado(Empleado empleado);
+    List<Responsable> findByEstudiante(Estudiante estudiante);
 
 }

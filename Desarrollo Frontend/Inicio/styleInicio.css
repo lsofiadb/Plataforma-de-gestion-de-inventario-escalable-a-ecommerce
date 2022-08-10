@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    margin: 0;
+    background-color: #E6FFFF;
+}
+/*B096FA*/
+.NavBar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #BC9CC4;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    top: 100%;
+}
+
+h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#balon{
+    width: 3.5em;
+    justify-self: center;
+    animation: rotacion 4s linear infinite;
+}
+
+@keyframes rotacion {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.Titulo{
+    font-family: 'Playfair Display', serif;
+}
+
+#Logo{
+    width: 12em;
+    margin-left: 15em;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 50%;
+    margin-top: 2em;
+}
+
+.cardDir{
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
+    
+}
+
+.cardAux{
+    width: 100%;
+    margin-left: 50px;
+}
+
+.imagen{
+    opacity: 1;
+    display: block;
+    transition: 1.5 ease;
+    backface-visibility: hidden;
+    border-radius:3%;
+    box-shadow: 10px 5px 10px gray;
+}
+
+#director{
+    width: 100%;
+}
+
+.fondoimg{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cardDir:hover #director{
+    opacity: 0.3;
+}
+
+.cardDir:hover #fondoDir {
+    opacity: 1;
+}
+
+#auxiliar{
+    width: 100%;
+}
+
+.cardAux:hover #auxiliar{
+    opacity: 0.3;
+}
+
+.cardAux:hover #fondoAux {
+    opacity: 1;
+}
+
+.BtnAux{
+    margin-top: 610px;
+    background-color: #BC9CC4;
+    border: none;
+}
+
+.BtnDir{
+    margin-top: 500px;
+    background-color: #BC9CC4;
+    border: none;
+}
+
+.Btn{
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#fondoAux{
+    width: 470px;
+    height: 75%;
+    margin-left: 280px;
+    padding-bottom:85px;
+}
+
+@media (max-width: 1330px) {
+    .Titulo{
+       font-size: 20px;
+    }
+   
+    .BtnAux{
+       margin-top: 470px;
+       margin-right: 140px;
+    }
+
+    .BtnDir{
+        margin-top: 350px;
+    }
+   }

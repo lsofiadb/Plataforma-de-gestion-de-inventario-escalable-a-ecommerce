@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../stylesBusquedas.css" />
+    <title>Busqueda Pasante</title>
+  </head>
+  <body>
+    <div id="container-principal">
+      <div class="NavBar">
+        <img id="balon" src="../../Imagenes/Balon.png" />
+        <h1 class="Titulo">Unidad deportiva Módulo de Asistencia</h1>
+        <img id="Logo" src="../../Imagenes/logo.png" />
+      </div>
+      <nav class="nav-div">
+        <ul>
+          <li class="">
+            <a href="../Auxiliar.html">Home</a>
+          </li>
+          <li class="">
+            <a href="../AsistenciaDocente/BusquedaDocente.html">Docente</a>
+          </li>
+          <li class="">
+            <a href="../AsistenciaPasante/BusquedaPasante.html">Pasante</a>
+          </li>
+          <li class="">
+            <a href="../AsistenciaMienEquipo/BusquedaMiemEquipo.html"
+              >M. Equipo</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="Card">
+        <h1 class="Titulo">Asistencias Pasante</h1>
+        <div id="form">
+          <label for="ID">Ingrese el código del pasante: </label>
+          <input type="text" id="codPasante" name="codPasante" value="" />
+          <input
+            class="Btn"
+            type="submit"
+            value="Buscar"
+            onclick="getInfoPasante()"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./BusquedaPasante.js"></script>
+</html>

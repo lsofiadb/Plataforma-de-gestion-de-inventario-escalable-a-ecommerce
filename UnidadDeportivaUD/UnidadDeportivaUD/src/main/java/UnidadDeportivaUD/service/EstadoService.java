@@ -15,4 +15,8 @@ public class EstadoService {
         return estadoRepository.findById(IDESTADO).get();
     }
 
+    public Estado actualizarEstado(Estado estado){
+        return estadoRepository.save(estado);
+    }
+
 }
