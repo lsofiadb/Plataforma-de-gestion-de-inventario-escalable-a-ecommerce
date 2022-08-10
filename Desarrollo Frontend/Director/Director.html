@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesDirector.css" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+  </head>
+  <body onload="startTime()">
+    <header class="NavBar">
+      <img id="balon" src="../Imagenes/balon.png" />
+      <h1 class="Titulo">Unidad deportiva Módulo de Asistencia</h1>
+      <img id="Logo" src="../Imagenes/logo.png" />
+    </header>
+    <nav class="nav-div">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li><a href="#">Docente</a></li>
+        <li><a href="#">Pasante</a></li>
+        <li><a href="#">M. Equipo</a></li>
+      </ul>
+    </nav>
+    <article>
+      <div class="content-div">
+        <div class="card-div">
+          <div class="card-info">
+            <div class="card-img">
+              <img src="../Imagenes/director_Log.jpg" alt="" />
+            </div>
+            <div class="card-basicData">
+              <div class="card-basicData_title">
+                <span><b>DIRECTOR DEPORTIVO</b> </span>
+              </div>
+              <div class="card-basicData_data">
+                <div>Codigo:</div>
+                <div id="cod_aux">1516165</div>
+              </div>
+              <div class="card-basicData_data">
+                <div id="nom_aux">Nombres</div>
+              </div>
+              <div class="card-basicData_data">
+                <div>Sede:</div>
+                <div id="sede_aux">La 40</div>
+              </div>
+              <div class="card-basicData_data">
+                <div id="date"></div>
+                <div id="clock"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-div">
+        <form class="card-div form-data" id="form-character-profile">
+          <div class="input-container">
+            <div class="input-title">Codigo Estudiante:</div>
+            <input type="number" id="codEstudiante" class="input-text" />
+          </div>
+          <div class="input-container">
+            <div class="input-title">Tipo:</div>
+            <select name="tipo" id="tipo" class="form-select">
+              <option>Pasante</option>
+              <option>M. Equipo</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <div class="input-title">Periodo:</div>
+            <select name="periodo" id="periodo" class="form-select">
+              <option>I</option>
+              <option>II</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <div class="input-title">Sede:</div>
+            <select name="Tipo" id="sede" class="form-select">
+              <option>La 40</option>
+              <option>Macarena</option>
+            </select>
+          </div>
+          <div class="button-div">
+            <input
+              type="submit"
+              value="Generar PDF"
+              class="input-button"
+              id="buttonPDF"
+            />
+          </div>
+        </form>
+      </div>
+    </article>
+
+    <script src="Director.js"></script>
+  </body>
+</html>
