@@ -1,4 +1,4 @@
-# Proyecto Final Bases Datos I :floppy_disk:
+## Plataforma de gestión de inventario escalable para tiendas deportivas ecommerce :basketball::rugby_football:
 Módulo de gestión de asistencia para unidad deportiva, con los roles:
 - Docente
 - Pasante
@@ -7,6 +7,9 @@ Módulo de gestión de asistencia para unidad deportiva, con los roles:
 
 ## Tecnologías utilizadas :hammer:
 Spring Boot, Java 17, Oracle, HTML, CSS, JS, VSC, LiveServer
+
+## Metodologías ágiles :wrench:
+SCRUM
 
 ## Interfaces gráficas :movie_camera:
 ### *Inicio* 
